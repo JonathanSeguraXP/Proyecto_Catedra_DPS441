@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #EFEBE9;
+}
+
+/* Animación para el loader */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
