@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { AuthContext } from '../context/AuthContext';
 import api from '../services/api';
+import { IMAGES_URL } from '../services/config';
 import { Coffee, Search, ShoppingCart, Plus, Minus, LogOut } from 'lucide-react-native';
 
 function ClienteCatalogoScreen({ navigation }) {
@@ -68,7 +69,7 @@ function ClienteCatalogoScreen({ navigation }) {
         return (
             <View style={styles.card}>
                 {item.imagen && (
-                    <Image source={{ uri: `http://192.168.1.2:4000/uploads/${item.imagen}` }}
+                    <Image source={{ uri: `${IMAGES_URL}/uploads/${item.imagen}` }}
                         style={styles.cardImage} resizeMode='cover' />
                 )}
                 <View style={styles.cardHeader}>
