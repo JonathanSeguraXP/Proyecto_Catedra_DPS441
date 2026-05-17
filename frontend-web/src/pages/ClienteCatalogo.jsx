@@ -106,7 +106,7 @@ function ClienteCatalogo() {
                             return (
                                 <div key={p.id} className='bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition'>
                                     {p.imagen && (
-                                        <img src={`http://192.168.1.2:4000/uploads/${p.imagen}`} alt={p.nombre}
+                                        <img src={`${import.meta.env.VITE_BACKEND_URL}/uploads/${p.imagen}`} alt={p.nombre}
                                             className='w-full h-32 object-cover rounded-xl mb-3' />
                                     )}
                                     <div className='flex items-start justify-between mb-3'>

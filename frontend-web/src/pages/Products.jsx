@@ -7,7 +7,7 @@ import { getCategories } from '../services/categoryService';
 import { Plus, Pencil, Trash2, X, Search, Image } from 'lucide-react';
 import Swal from 'sweetalert2';
 
-const API_URL = 'http://192.168.1.2:4000';
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 function Products() {
     const [products, setProducts] = useState([]);

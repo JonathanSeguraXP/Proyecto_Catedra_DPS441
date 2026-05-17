@@ -26,7 +26,7 @@ function ProductForm({ categories = [], initial = null, onSubmit, onCancel }) {
                 codigo_barras: initial.codigo_barras || ''
             });
             if (initial.imagen) {
-                setPreview(`http://192.168.1.2:4000/uploads/${initial.imagen}`);
+                setPreview(`${import.meta.env.VITE_BACKEND_URL}/uploads/${initial.imagen}`);
             }
         }
     }, [initial]);
