@@ -19,9 +19,10 @@ INSERT INTO productos (nombre, categoria_id, stock, stock_minimo, precio, fecha_
 ('Croissant',         5, 12,  5, 2.00, '2026-05-10', '750100000007'),
 ('Jugo de Naranja',   4, 25, 10, 2.00, '2026-06-01', '750100000008');
 
--- Insertar usuario administrador por defecto (password: admin123)
+-- Insertar usuarios por defecto (password: admin123)
 INSERT INTO usuarios (nombre, email, password, rol, telefono) VALUES
-('Admin CafeSys', 'admin@cafesys.com', '$2b$10$9pHV5G/GzDua/q29ht676eBehs7GQElrmjYPXNlshfiiHYSIIUZlW', 'admin', '555-0100');
+('Admin CafeSys', 'admin@cafesys.com', '$2b$10$9pHV5G/GzDua/q29ht676eBehs7GQElrmjYPXNlshfiiHYSIIUZlW', 'admin', '555-0100'),
+('Maria', 'maria@gmail.com', '$2b$10$9pHV5G/GzDua/q29ht676eBehs7GQElrmjYPXNlshfiiHYSIIUZlW', 'cliente', '555-0101');
 -- Contraseña: admin123 (hash bcrypt generado)
 
 -- Insertar movimientos de ejemplo

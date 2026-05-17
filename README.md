@@ -124,11 +124,12 @@ npx expo start
 
 Escanea el QR con tu teléfono.
 
-## Usuario por Defecto
+## Usuarios por Defecto
 
 | Nombre | Email | Contraseña | Rol |
 |--------|-------|------------|-----|
 | Admin CafeSys | `admin@cafesys.com` | `admin123` | Admin |
+| Maria | `maria@gmail.com` | `admin123` | Cliente |
 
 ## Documentación
 
