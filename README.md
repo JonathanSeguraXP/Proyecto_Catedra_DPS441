@@ -103,7 +103,7 @@ npm install
 npm run dev
 ```
 
-Abrir en `http://localhost:5173`
+Abrir en `http://localhost:5173/dashboard`
 
 ### 4. App Móvil
 
